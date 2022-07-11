@@ -11,7 +11,7 @@ interface AuthContextData {
   isAuthenticated: boolean;
 }
 
-const COOKIE_NAME = "strong-conference-access";
+const COOKIE_NAME = "strongaccess";
 const DOMAIN = ".movimentoflores.com.br";
 
 const AuthContext = React.createContext({} as AuthContextData);
