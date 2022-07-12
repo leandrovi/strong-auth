@@ -8,6 +8,7 @@ import { useAuth } from "../hooks/AuthContext";
 import { mediaQueries, WIDTH_CONTAINER } from "@utils/constants";
 import { TitleMain } from "@components/Typography/Typography";
 import { MenuOptions } from "@components/MenuOptions/MenuOptions";
+import { WppGroup } from "@components/WppGroup/WppGroup";
 
 const Main = styled.main`
   width: 100%;
@@ -85,6 +86,8 @@ const Menu: NextPage = () => {
 
         <BgImage />
       </Main>
+
+      <WppGroup />
     </>
   );
 };

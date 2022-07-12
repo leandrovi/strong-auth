@@ -9,6 +9,7 @@ import { mediaQueries, WIDTH_CONTAINER } from "@utils/constants";
 
 import { TitleMain } from "@components/Typography/Typography";
 import { Form } from "@components/Form/Form";
+import { WppGroup } from "@components/WppGroup/WppGroup";
 
 const Main = styled.main`
   width: 100%;
@@ -86,6 +87,8 @@ const Home: NextPage = () => {
 
         <BgImage />
       </Main>
+
+      <WppGroup />
     </>
   );
 };
