@@ -13,7 +13,7 @@ export function WppGroup() {
         onMouseLeave={() => setShowTooltip(false)}
       >
         <Link
-          href="https://chat.whatsapp.com/Ev8eRRahpplB7sjl1phe6C"
+          href="https://chat.whatsapp.com/LB0B3tpkNmq3ijdMNeQegz"
           passHref={true}
         >
           <a target="_blank" rel="noopener noreferrer" />
