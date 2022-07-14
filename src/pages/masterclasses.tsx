@@ -11,20 +11,57 @@ import { mediaQueries, WIDTH_CONTAINER } from "@utils/constants";
 import { TitleTwo } from "@components/Typography/Typography";
 
 const masterclasses = [
-  "https://www.youtube.com/embed/_YsoOSFF4jg",
-  "https://www.youtube.com/embed/x0zcj2G-B8k",
-  "https://www.youtube.com/embed/cRprO1yrRuY",
-  "https://www.youtube.com/embed/lvMRewk478c",
-  "https://www.youtube.com/embed/0rpZ8rxfbfY",
-  "https://www.youtube.com/embed/36yAFkxmbzw",
-  "https://www.youtube.com/embed/9YPvIKDoRPw",
-  "https://www.youtube.com/embed/l26qxqK4x0A",
-  "https://www.youtube.com/embed/K7dskzCTg1Q",
-  "https://www.youtube.com/embed/VNMYx5IjXxo",
-  "https://www.youtube.com/embed/NVgZn7dVE0s",
-  "https://www.youtube.com/embed/Ir7PHTqk_CE",
-  "https://www.youtube.com/embed/UR2LQpzJmRs",
-  "https://www.youtube.com/embed/FponXUC9hj8",
+  {
+    video:
+      "https://player.vimeo.com/video/729072116?h=71cee7bb43&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Prepare-se para a Conferência Flores 2022",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/728849015?h=cc36299d1e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    link: "https://forms.gle/ZprERJwa5PqPSPVaA",
+    title: "Desafio dos Fortes",
+  },
+  // {
+  //   video:
+  //     "https://player.vimeo.com/video/729451978?h=6034d0ff44&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //   title: "Abraçando a Natureza da Mulher",
+  // },
+  // {
+  //   video:
+  //     "https://player.vimeo.com/video/729451796?h=444d4f9c6f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //   title: `Vencendo a "montanha-russa" das Emoções`,
+  // },
+  // {
+  //   video:
+  //     "https://player.vimeo.com/video/729781475?h=af13c95ee2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //   title: "Corpo - Um Lugar",
+  // },
+  // {
+  //   video:
+  //     "https://player.vimeo.com/video/729786752?h=3a2a1ba309&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //   title: "Tecida em Maravilhas",
+  // },
+  // {
+  //   video:
+  //     "https://player.vimeo.com/video/729778349?h=ada4fb73c4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //   title: "Orar Segundo o Espírito",
+  // },
+  // {
+  //   video: "",
+  // },
+  // {
+  //   video: "",
+  // },
+  // {
+  //   video: "",
+  // },
+  // {
+  //   video: "",
+  // },
+  // {
+  //   video: "",
+  // }
 ];
 
 const Main = styled.main`
@@ -64,16 +101,31 @@ export const Videos = styled.div`
 
 export const VideoWrapper = styled.div`
   width: 301px;
-  height: 193px;
-  margin: 2rem;
+  height: 246px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 2rem 1.8rem;
   position: relative;
   display: block;
   z-index: 10;
 
-  &::before {
-    display: block;
-    content: "";
-    padding-top: 56.25%;
+  h2 {
+    color: ${({ theme }) => theme.palette.pink[500]};
+    text-align: center;
+    font-family: "Chloe";
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > div {
+    padding: 56.25% 0 0 0;
+    position: relative;
   }
 
   iframe {
@@ -84,6 +136,19 @@ export const VideoWrapper = styled.div`
     width: 100%;
     height: 100%;
     border: 0;
+  }
+
+  a {
+    color: ${({ theme }) => theme.palette.pink[500]};
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
@@ -148,14 +213,23 @@ const Masterclasses: NextPage = () => {
           <TitleTwo color="#EE9BB5">Masterclasses</TitleTwo>
 
           <Videos>
-            {masterclasses.map((masterclass) => (
-              <VideoWrapper key={masterclass}>
-                <iframe
-                  src={masterclass}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+            {masterclasses.map(({ video, link, title }) => (
+              <VideoWrapper key={video}>
+                <h2>{title}</h2>
+                <div>
+                  <iframe
+                    src={video}
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title="Masterclass - Abra&amp;ccedil;ando a Natureza da Mulher - Conf&amp;ecirc;ncia Flores 2022"
+                  ></iframe>
+                </div>
+                {link && (
+                  <Link href={link}>
+                    <a target="_blank">Clique aqui para votar</a>
+                  </Link>
+                )}
               </VideoWrapper>
             ))}
           </Videos>
