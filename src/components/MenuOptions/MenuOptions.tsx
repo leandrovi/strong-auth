@@ -16,6 +16,13 @@ export function MenuOptions() {
 
       <div>
         <FaArrowRight size={36} color="#FFFFFF" />
+        <Link href="/sessoes">
+          <a>Acessar Sessões Passadas</a>
+        </Link>
+      </div>
+
+      <div>
+        <FaArrowRight size={36} color="#FFFFFF" />
 
         <Link href="https://aovivo.movimentoflores.com.br">
           <a>Acessar conferência</a>
