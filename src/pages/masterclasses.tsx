@@ -22,46 +22,46 @@ const masterclasses = [
     link: "https://forms.gle/ZprERJwa5PqPSPVaA",
     title: "Desafio dos Fortes",
   },
-  // {
-  //   video:
-  //     "https://player.vimeo.com/video/729451978?h=6034d0ff44&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-  //   title: "Abraçando a Natureza da Mulher",
-  // },
-  // {
-  //   video:
-  //     "https://player.vimeo.com/video/729451796?h=444d4f9c6f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-  //   title: `Vencendo a "montanha-russa" das Emoções`,
-  // },
-  // {
-  //   video:
-  //     "https://player.vimeo.com/video/729781475?h=af13c95ee2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-  //   title: "Corpo - Um Lugar",
-  // },
-  // {
-  //   video:
-  //     "https://player.vimeo.com/video/729786752?h=3a2a1ba309&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-  //   title: "Tecida em Maravilhas",
-  // },
-  // {
-  //   video:
-  //     "https://player.vimeo.com/video/729778349?h=ada4fb73c4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-  //   title: "Orar Segundo o Espírito",
-  // },
-  // {
-  //   video: "",
-  // },
-  // {
-  //   video: "",
-  // },
-  // {
-  //   video: "",
-  // },
-  // {
-  //   video: "",
-  // },
-  // {
-  //   video: "",
-  // }
+  {
+    video:
+      "https://player.vimeo.com/video/729451978?h=6034d0ff44&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Abraçando a Natureza da Mulher",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/729451796?h=444d4f9c6f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: `Vencendo a "montanha-russa" das Emoções`,
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/729781475?h=af13c95ee2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Corpo - Um Lugar",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/729786752?h=3a2a1ba309&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Tecida em Maravilhas",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/729778349?h=ada4fb73c4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Orar Segundo o Espírito",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/730193603?h=7f7b492b16&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "O Jardim do Coração",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/729981082?h=bdf5646c27&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Book Club",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/729976555?h=4143eed7dd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Bible Journaling",
+  },
 ];
 
 const Main = styled.main`
