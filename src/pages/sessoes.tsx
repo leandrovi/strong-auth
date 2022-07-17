@@ -16,6 +16,11 @@ const sessions = [
       "https://player.vimeo.com/video/729071558?h=365ee262c2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     title: "Sessão 1",
   },
+  {
+    video: "Sessão 2",
+    title:
+      "https://player.vimeo.com/video/729072273?h=4e502029e0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  },
   // {
   //   video: "",
   //   title: "",
