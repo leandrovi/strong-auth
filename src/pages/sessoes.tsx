@@ -21,10 +21,16 @@ const sessions = [
       "https://player.vimeo.com/video/729072273?h=4e502029e0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     title: "Sessão 2",
   },
-  // {
-  //   video: "",
-  //   title: "",
-  // },
+  {
+    video:
+      "https://player.vimeo.com/video/729073127?h=1f08f87722&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Sessão 3",
+  },
+  {
+    video:
+      "https://player.vimeo.com/video/729073741?h=f67d3da2f0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    title: "Sessão 4",
+  },
 ];
 
 const Main = styled.main`
