@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://dfmsuhz45gk0a.cloudfront.net";
+const baseURL = "https://auth.conferenciaflores.com.br";
 
 export const api = axios.create({
   baseURL,
