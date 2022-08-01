@@ -21,6 +21,13 @@ export function MenuOptions() {
         </Link>
       </div>
 
+      <div>
+        <FaArrowRight size={36} color="#FFFFFF" />
+        <Link href="https://downloads.adai.com.br/adesivo_conferencia.pdf">
+          <a>Download dos adesivos</a>
+        </Link>
+      </div>
+
       {/* <div>
         <FaArrowRight size={36} color="#FFFFFF" />
 
