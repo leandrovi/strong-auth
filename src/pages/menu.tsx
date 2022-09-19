@@ -31,6 +31,11 @@ const Container = styled.div`
   align-items: flex-start;
   justify-content: center;
 
+  p {
+    color: white;
+    font-weight: bold;
+  }
+
   @media ${mediaQueries.tablet} {
     align-items: center;
   }
@@ -79,6 +84,8 @@ const Menu: NextPage = () => {
 
       <Main>
         <Container>
+          <Title>Conferência</Title>
+          <TitleMain color="#FFFFFF">Forte</TitleMain>
           <Paragraph maxWidth={400}>
             Obrigado por participar da Conferência Flores 2022.
           </Paragraph>
