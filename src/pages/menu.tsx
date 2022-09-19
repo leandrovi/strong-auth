@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 import { useAuth } from "../hooks/AuthContext";
 import { mediaQueries, WIDTH_CONTAINER } from "@utils/constants";
-import { TitleMain } from "@components/Typography/Typography";
+import { Paragraph, TitleMain } from "@components/Typography/Typography";
 import { MenuOptions } from "@components/MenuOptions/MenuOptions";
 import { WppGroup } from "@components/WppGroup/WppGroup";
 
@@ -79,9 +79,10 @@ const Menu: NextPage = () => {
 
       <Main>
         <Container>
-          <Title>Conferência</Title>
-          <TitleMain color="#FFFFFF">Forte</TitleMain>
-          <MenuOptions />
+          <Paragraph maxWidth={400}>
+            Obrigado por participar da Conferência Flores 2022.
+          </Paragraph>
+          <Paragraph maxWidth={400}>Nos vemos no ano que vem!</Paragraph>
         </Container>
 
         <BgImage />
